@@ -25,7 +25,7 @@
                     @enderror
 
                     <label for="email">Email</label>
-                    <input id="email" name="email" type="email" tabindex="2" placeholder="Ex: email@email.com.br"
+                    <input id="email" name="email" type="text" tabindex="2" placeholder="Ex: email@email.com.br"
                            value="{{old('email')}}">
                     @error('email')
                     <div>{{ $message }}</div>
