@@ -18,6 +18,6 @@ class CategoryController extends Controller
 
     public function show(Category $category)
     {
-        return view('site.category.show', ['category' => $category]);
+        return view('site.category.show', ['category' => $category->load('products')]);
     }
 }
